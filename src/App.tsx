@@ -12,18 +12,18 @@ function App() {
     const onlineSystems = mockSystemsData.filter(system => system.ffsStatus === 'Fit for Service').length;
     const totalAnomalies = mockSystemsData.reduce((sum, system) => sum + system.numberOfAnomalies, 0);
     const totalLOPCs = mockSystemsData.reduce((sum, system) => sum + system.numberOfLOPCs, 0);
-    const totalFMOs = mockSystemsData.reduce((sum, system) => sum + system.numberOfFMOs, 0);
-    const totalROs = mockSystemsData.reduce((sum, system) => sum + system.numberOfROs, 0);
-    const totalWraps = mockSystemsData.reduce((sum, system) => sum + system.numberOfWraps, 0);
+    const totalFabricMaintenance = mockSystemsData.reduce((sum, system) => sum + system.numberOfFabricMaintenance, 0);
+    const totalRepairOrders = mockSystemsData.reduce((sum, system) => sum + system.numberOfRepairOrders, 0);
+    const totalTemporaryRepairs = mockSystemsData.reduce((sum, system) => sum + system.numberOfTemporaryRepairs, 0);
 
     return {
       totalSystems,
       onlineSystems,
       totalAnomalies,
       totalLOPCs,
-      totalFMOs,
-      totalROs,
-      totalWraps
+      totalFabricMaintenance,
+      totalRepairOrders,
+      totalTemporaryRepairs
     };
   }, []);
 
@@ -78,20 +78,20 @@ function App() {
             color="yellow"
           />
           <StatsCard
-            title="FMOs"
-            value={stats.totalFMOs}
+            title="Fabric Maintenance"
+            value={stats.totalFabricMaintenance}
             icon={<Wrench />}
             color="blue"
           />
           <StatsCard
-            title="ROs"
-            value={stats.totalROs}
+            title="Repair Orders"
+            value={stats.totalRepairOrders}
             icon={<Settings />}
             color="gray"
           />
           <StatsCard
-            title="Wraps"
-            value={stats.totalWraps}
+            title="Temporary Repairs"
+            value={stats.totalTemporaryRepairs}
             icon={<CheckCircle />}
             color="green"
           />

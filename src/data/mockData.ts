@@ -9,9 +9,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Routine monitoring',
     numberOfAnomalies: 2,
     numberOfLOPCs: 0,
-    numberOfFMOs: 1,
-    numberOfROs: 0,
-    numberOfWraps: 3
+    numberOfFabricMaintenance: 1,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 3
   },
   {
     system: 'Separation & Crude Handling',
@@ -21,9 +21,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Operating normally',
     numberOfAnomalies: 1,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 1,
-    numberOfWraps: 2
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 1,
+    numberOfTemporaryRepairs: 2
   },
   {
     system: 'Gas Compression & Treatment',
@@ -33,9 +33,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Pressure monitoring required',
     numberOfAnomalies: 3,
     numberOfLOPCs: 1,
-    numberOfFMOs: 2,
-    numberOfROs: 0,
-    numberOfWraps: 1
+    numberOfFabricMaintenance: 2,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 1
   },
   {
     system: 'HP Flare',
@@ -45,9 +45,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Standby mode',
     numberOfAnomalies: 0,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 0,
-    numberOfWraps: 0
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 0
   },
   {
     system: 'LP Flare',
@@ -57,9 +57,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Standby mode',
     numberOfAnomalies: 0,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 0,
-    numberOfWraps: 1
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 1
   },
   {
     system: 'Produced Water Treatment',
@@ -69,9 +69,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Processing within limits',
     numberOfAnomalies: 1,
     numberOfLOPCs: 0,
-    numberOfFMOs: 1,
-    numberOfROs: 0,
-    numberOfWraps: 2
+    numberOfFabricMaintenance: 1,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 2
   },
   {
     system: 'Water Injection/SCSSV',
@@ -81,9 +81,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Scheduled maintenance',
     numberOfAnomalies: 0,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 2,
-    numberOfWraps: 0
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 2,
+    numberOfTemporaryRepairs: 0
   },
   {
     system: 'Sea Water Lift & Distribution',
@@ -93,9 +93,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Operating normally',
     numberOfAnomalies: 2,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 1,
-    numberOfWraps: 4
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 1,
+    numberOfTemporaryRepairs: 4
   },
   {
     system: 'Heating & Cooling Medium',
@@ -105,9 +105,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Temperature controlled',
     numberOfAnomalies: 1,
     numberOfLOPCs: 0,
-    numberOfFMOs: 1,
-    numberOfROs: 0,
-    numberOfWraps: 1
+    numberOfFabricMaintenance: 1,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 1
   },
   {
     system: 'Cargo Tank Cleaning (COW)',
@@ -117,9 +117,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Not in use',
     numberOfAnomalies: 0,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 0,
-    numberOfWraps: 0
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 0
   },
   {
     system: 'Import Header & pipework to various tanks',
@@ -129,9 +129,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Flow monitoring active',
     numberOfAnomalies: 1,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 0,
-    numberOfWraps: 2
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 2
   },
   {
     system: 'Transfer Header & pipework to/from various tanks',
@@ -141,9 +141,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Transfer operations normal',
     numberOfAnomalies: 0,
     numberOfLOPCs: 0,
-    numberOfFMOs: 1,
-    numberOfROs: 0,
-    numberOfWraps: 3
+    numberOfFabricMaintenance: 1,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 3
   },
   {
     system: 'Export Header & pipework from various tanks & offloading',
@@ -153,9 +153,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Export ready',
     numberOfAnomalies: 2,
     numberOfLOPCs: 1,
-    numberOfFMOs: 0,
-    numberOfROs: 1,
-    numberOfWraps: 2
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 1,
+    numberOfTemporaryRepairs: 2
   },
   {
     system: 'Crude Header & pipework to/from various tanks',
@@ -165,9 +165,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Crude handling normal',
     numberOfAnomalies: 1,
     numberOfLOPCs: 0,
-    numberOfFMOs: 2,
-    numberOfROs: 0,
-    numberOfWraps: 1
+    numberOfFabricMaintenance: 2,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 1
   },
   {
     system: 'Slop Headers & pipework to/from the slop tanks',
@@ -177,9 +177,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Slop processing active',
     numberOfAnomalies: 0,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 0,
-    numberOfWraps: 1
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 1
   },
   {
     system: 'Water Ballast',
@@ -189,9 +189,9 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Ballast system ready',
     numberOfAnomalies: 1,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 1,
-    numberOfWraps: 0
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 1,
+    numberOfTemporaryRepairs: 0
   },
   {
     system: 'Bilge',
@@ -201,8 +201,8 @@ export const mockSystemsData: SystemData[] = [
     actionsAndStatus: 'Bilge system operational',
     numberOfAnomalies: 0,
     numberOfLOPCs: 0,
-    numberOfFMOs: 0,
-    numberOfROs: 0,
-    numberOfWraps: 1
+    numberOfFabricMaintenance: 0,
+    numberOfRepairOrders: 0,
+    numberOfTemporaryRepairs: 1
   }
 ]; 

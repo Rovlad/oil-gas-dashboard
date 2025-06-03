@@ -6,9 +6,9 @@ export interface SystemData {
   actionsAndStatus: string;
   numberOfAnomalies: number;
   numberOfLOPCs: number;
-  numberOfFMOs: number;
-  numberOfROs: number;
-  numberOfWraps: number;
+  numberOfFabricMaintenance: number;
+  numberOfRepairOrders: number;
+  numberOfTemporaryRepairs: number;
 }
 
 export type StatusType = 'Fit for Service' | 'Partially' | 'Not Fit' | 'Not Defined' | 'Healthy' | 'Compromised' | 'Not functional' | 'Fit until COP' | 'Will Partially' | 'Will Not Remain Fit';
@@ -18,7 +18,7 @@ export interface DashboardStats {
   onlineSystems: number;
   totalAnomalies: number;
   totalLOPCs: number;
-  totalFMOs: number;
-  totalROs: number;
-  totalWraps: number;
+  totalFabricMaintenance: number;
+  totalRepairOrders: number;
+  totalTemporaryRepairs: number;
 } 

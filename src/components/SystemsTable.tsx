@@ -35,13 +35,13 @@ export const SystemsTable: React.FC<SystemsTableProps> = ({ systems }) => {
                 LOPCs
               </th>
               <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
-                FMOs
+                Fabric Maintenance
               </th>
               <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
-                ROs
+                Repair Orders
               </th>
               <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Wraps
+                Temporary Repairs
               </th>
             </tr>
           </thead>
@@ -79,23 +79,23 @@ export const SystemsTable: React.FC<SystemsTableProps> = ({ systems }) => {
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-center">
                   <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium ${
-                    system.numberOfFMOs > 0 ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'
+                    system.numberOfFabricMaintenance > 0 ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'
                   }`}>
-                    {system.numberOfFMOs}
+                    {system.numberOfFabricMaintenance}
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-center">
                   <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium ${
-                    system.numberOfROs > 0 ? 'bg-purple-100 text-purple-800' : 'bg-gray-100 text-gray-800'
+                    system.numberOfRepairOrders > 0 ? 'bg-purple-100 text-purple-800' : 'bg-gray-100 text-gray-800'
                   }`}>
-                    {system.numberOfROs}
+                    {system.numberOfRepairOrders}
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-center">
                   <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium ${
-                    system.numberOfWraps > 0 ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
+                    system.numberOfTemporaryRepairs > 0 ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
                   }`}>
-                    {system.numberOfWraps}
+                    {system.numberOfTemporaryRepairs}
                   </span>
                 </td>
               </tr>
