@@ -5,6 +5,7 @@ import { mockSystemsData } from './data/mockData';
 import { DashboardStats } from './types';
 import { Activity, AlertTriangle, CheckCircle, Settings, Wrench, Send, MessageCircle } from 'lucide-react';
 
+// Q&A Section included - force redeploy
 function App() {
   const [question, setQuestion] = React.useState('');
   const [answer, setAnswer] = React.useState('');
