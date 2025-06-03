@@ -215,7 +215,7 @@ function App() {
 
         {/* Footer */}
         <footer className="text-center text-gray-500 text-sm py-8">
-          <p>© 2024 Oil & Gas Plant Dashboard. All rights reserved.</p>
+          <p>© 2025 Oil & Gas Plant Dashboard. All rights reserved. Q&A v1.1</p>
         </footer>
       </main>
     </div>
